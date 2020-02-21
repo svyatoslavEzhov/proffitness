@@ -1,0 +1,208 @@
+.filter_ca
+    .filter_ca__layer.section__layer
+        .center
+            .f-container
+                .top__filter-icon
+                    +svg2('filter')
+                .top__filters
+                    ul.top__filters-list
+                        +filter([['Велотренажер', 'velo'], ['Гребной тренажер', 'greb'], ['Оборудование для кроссфита', 'crossfit'], ['Скамья и стойки', 'bench'], ['Спин байк', 'spin'], ['Степпер','stepper'], ['Профессиональный орбитрек', 'orbitrek'], ['Силовой тренажер', 'strength']])
+                        +filter([['Беговые дорожки', 'running', 'active'], ['Свободные веса', 'free'],['Фитнес и Аэробика', 'fitness'], ['Коврик для йоги', 'carpet']])
+                form.filter_ca__form
+                    .filter_ca__sort
+                        .select
+                            select.filter_ca__select
+                                option(value="По популярности")
+                                    |По популярности
+                                option(value="По возрастанию цены")
+                                    |По возрастанию цены
+                                option(value="По уменьшению цены")
+                                    |По уменьшению цены
+                        .form-group
+                            input(type='checkbox' value='Lifefitness' id="filter_ca__radio1")
+                            label.filter_ca__lable(for='filter_ca__radio1')
+                                span
+                                    span
+                                |Lifefitness
+                            input(type='checkbox' value='Precor' id="filter_ca__radio2")
+                            label.filter_ca__lable(for='filter_ca__radio2')
+                                span
+                                    span
+                                |Precor
+                            input(type='checkbox' value='Technogym' id="filter_ca__radio3")
+                            label.filter_ca__lable(for='filter_ca__radio3')
+                                span
+                                    span
+                                |Technogym
+                        #filter_ca__slider
+                        button.main-btn.filter_ca__btn(type="submit")
+                            |Сортировать
+                    .filter_ca__show
+                        .filter_ca__line
+                        .filter_ca_arrow
+                            |&#x25bc;
+                .top__simulators
+                    .top__simulator-card.velo.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator1.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная Беговая Дорожка Life Fitness 95T ENGAGE
+                        p.top__simulator-card-price
+                            |2,500 &#8364;
+                    .top__simulator-card.greb.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator2.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Life Fitness Discover SI Elevation
+                        p.top__simulator-card-price
+                            |3,000 &#8364;
+                    .top__simulator-card.velo.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator3.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Precor TRM 885 Next Generation
+                        p.top__simulator-card-price
+                            |3,300 &#8364;
+                    .top__simulator-card.greb.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator1.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная Беговая Дорожка Life Fitness 95T ENGAGE
+                        p.top__simulator-card-price
+                            |2,500 &#8364;
+                    .top__simulator-card.fitness.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator2.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Life Fitness Discover SI Elevation
+                        p.top__simulator-card-price
+                            |3,000 &#8364;
+                    .top__simulator-card.fitness.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator3.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Precor TRM 885 Next Generation
+                        p.top__simulator-card-price
+                            |3,300 &#8364;
+                    .top__simulator-card.greb.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator1.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная Беговая Дорожка Life Fitness 95T ENGAGE
+                        p.top__simulator-card-price
+                            |2,500 &#8364;
+                    .top__simulator-card.fitness.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator2.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Life Fitness Discover SI Elevation
+                        p.top__simulator-card-price
+                            |3,000 &#8364;
+                    .top__simulator-card.velo.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator3.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Precor TRM 885 Next Generation
+                        p.top__simulator-card-price
+                            |3,300 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator1.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная Беговая Дорожка Life Fitness 95T ENGAGE
+                        p.top__simulator-card-price
+                            |2,500 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator2.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Life Fitness Discover SI Elevation
+                        p.top__simulator-card-price
+                            |3,000 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator3.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Precor TRM 885 Next Generation
+                        p.top__simulator-card-price
+                            |3,300 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator1.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная Беговая Дорожка Life Fitness 95T ENGAGE
+                        p.top__simulator-card-price
+                            |2,500 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator2.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Life Fitness Discover SI Elevation
+                        p.top__simulator-card-price
+                            |3,000 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator3.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Precor TRM 885 Next Generation
+                        p.top__simulator-card-price
+                            |3,300 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator1.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная Беговая Дорожка Life Fitness 95T ENGAGE
+                        p.top__simulator-card-price
+                            |2,500 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator2.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Life Fitness Discover SI Elevation
+                        p.top__simulator-card-price
+                            |3,000 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card
+                        img.top__simulator-card-img(src="img/simulator3.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Precor TRM 885 Next Generation
+                        p.top__simulator-card-price
+                            |3,300 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card.unvisible-card
+                        img.top__simulator-card-img(src="img/simulator1.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная Беговая Дорожка Life Fitness 95T ENGAGE
+                        p.top__simulator-card-price
+                            |2,500 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card.unvisible-card
+                        img.top__simulator-card-img(src="img/simulator2.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Life Fitness Discover SI Elevation
+                        p.top__simulator-card-price
+                            |3,000 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card.unvisible-card
+                        img.top__simulator-card-img(src="img/simulator3.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Precor TRM 885 Next Generation
+                        p.top__simulator-card-price
+                            |3,300 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card.unvisible-card
+                        img.top__simulator-card-img(src="img/simulator1.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная Беговая Дорожка Life Fitness 95T ENGAGE
+                        p.top__simulator-card-price
+                            |2,500 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card.unvisible-card
+                        img.top__simulator-card-img(src="img/simulator2.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Life Fitness Discover SI Elevation
+                        p.top__simulator-card-price
+                            |3,000 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card.unvisible-card
+                        img.top__simulator-card-img(src="img/simulator3.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Precor TRM 885 Next Generation
+                        p.top__simulator-card-price
+                            |3,300 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card.unvisible-card
+                        img.top__simulator-card-img(src="img/simulator1.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная Беговая Дорожка Life Fitness 95T ENGAGE
+                        p.top__simulator-card-price
+                            |2,500 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card.unvisible-card
+                        img.top__simulator-card-img(src="img/simulator2.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Life Fitness Discover SI Elevation
+                        p.top__simulator-card-price
+                            |3,000 &#8364;
+                    .top__simulator-card.running.hidden-card.filter_ca__simulator-card.unvisible-card
+                        img.top__simulator-card-img(src="img/simulator3.jpg", alt="Running track")
+                        h3.top__simulator-card-name
+                            |Профессиональная беговая дорожка Precor TRM 885 Next Generation
+                        p.top__simulator-card-price
+                            |3,300 &#8364;
+                a(href="#").main-btn.top__btn.filter_ca__button
+                    |Еще

@@ -1,0 +1,228 @@
+.preview__layer {
+.fPa(0%, 40%, 0px, 40px, 980px, 1920px);
+margin-top: 109px;
+position: relative;
+overflow: hidden;
+& > * {
+    position: relative;
+    z-index: 2;
+}
+&:before {
+     content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1080px;
+    background: url('../img/header-figure_l.png') no-repeat top/contain;
+    z-index: 0;
+}
+
+&:after {
+    content: '';
+    position: absolute;
+    top: -19%;
+    right: 0;
+    width: 513/980 * 100%;
+    height: 442/509 * 100%;
+    min-width: 480px;
+     background: url('../img/header-figure_r.png') no-repeat top/contain;
+     z-index: 0;
+}
+}
+
+.preview__slider {
+    position: relative;
+    max-width: 100%;
+
+    .slick-dots {
+        bottom: 30px;
+    }
+  
+  .slick-list {
+    // overflow: visible;
+    margin-bottom: 10px;
+    padding-bottom: 40px;
+  }
+
+  .preview__slide-wrap{
+    .flex();
+    width: 100%;
+  }
+
+  .preview__slide {
+    position: relative;
+  }
+
+  .preview__slide-img_r {
+    position: absolute;
+    // width: 100%;
+    // height: 100%;
+  }
+
+  .preview__slide-img_l {
+    position: absolute;
+     width: 100%;
+    // height: 470/190 * 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .slick-dots {
+      position: relative;
+  }
+    .slick-dots {
+        li {
+           margin: 0;
+            button {
+                position: relative;
+                &:before {
+                     background: @main-color;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    opacity: 1;
+                    color: transparent;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+            }
+
+            &.slick-active {
+                 button {
+                &:before {
+                     background: transparent;
+                     border: 2px solid @main-color;
+                }
+            }
+            }
+        }
+    }
+}
+
+.preview__slide {
+  
+    display: flex !important;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    // overflow-x: hidden;
+
+    .main-btn {
+        opacity: 0;
+        margin-right: auto;
+    }
+
+    .main-btn.animated {
+        animation: slideUp 1s linear forwards;
+        animation-delay: 0.4s;
+    }
+}
+
+.preview__slide-title, .preview__slide-text {
+   
+    text-align: left;
+    opacity: 0;
+    // margin-left: 191/598.5 * 100%;
+  
+}
+
+
+
+.preview__slide-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 0 1 50% + ((217/2/980)*100%);
+    margin-right: -50px;
+    position: relative;
+    z-index: 5;
+  
+
+}
+
+.preview__slide-title {
+    .fSize(48vw, 48px * (768/980), 48px, 768px, 980px);
+    line-height: 1.35;
+    color: #313131;
+    margin-bottom: 10px;
+    &.animated{
+        animation: slide 1s ease-in-out forwards;
+        animation-delay: 0.3s;
+    }
+    
+}
+
+.preview__slide-text  {
+    letter-spacing: 0;
+    margin-bottom: 20px;
+    &.animated{
+        animation: slide 1s ease forwards;
+        animation-delay: 0.65s;
+    }
+   
+}
+
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(320px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(75px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.preview__slide-img_right, .preview__slide-img_left {
+    opacity: 0;
+  }
+
+  .preview__slide-img_left{
+    margin-left: 50/980 * 100%;
+    margin-right: 40/980 * 100%;
+    position: relative;
+    margin-top: 45px;
+      &.animated {
+        animation: slide 1s ease forwards;
+      }
+  }
+
+  .preview__slide-img_right{
+    &.animated {
+      animation: zoomIn 1s ease forwards;
+      animation-delay: 0.8s;
+    }
+}

@@ -1,0 +1,12 @@
+.new
+    .new__layer.section__layer
+        .center
+            h2.h2-title_l.new__title
+                |При добавлении новых товаров, вы узнаете об этом первыми!
+            .f-container
+                form#new__form.new__form(method="POST" action="javascript:void(null)")
+                    input(type="hidden" name="subject" value="Форма подписки")
+                    .form-group
+                        input(type="email" placeholder="Ваш e-mail" required name="email" class="text-field")
+                    button(type='submit').main-btn.new__btn
+                        |Подписаться

@@ -1,0 +1,33 @@
+.footer__layer {
+  background: #272726;
+  padding: 35px 0;
+}
+
+.footer__text {
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  color: #646464;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  svg {
+    max-width: 35px;
+    max-height: 35px;
+    fill: @main-color;
+    cursor: pointer;
+    transition: all 0.25s linear;
+
+    // &:hover {
+    //   fill: @accent-color;
+    // }
+  }
+}

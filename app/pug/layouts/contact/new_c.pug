@@ -1,0 +1,16 @@
+.new_c.new
+    .new_c.new__layer.section__layer
+        .center
+            h2.h2-title_m.new_c.new__title
+                |Есть вопросы? — Напишите нам
+            .f-container
+                form#new__form.new_c.new__form(method="POST" action="javascript:void(null)")
+                    input(type="hidden" name="subject" value="Форма подписки")
+                    .form-group
+                        input(type="name" placeholder="Имя (обязательно)" required name="name" class="text-field")
+                    .form-group
+                        input(type="email" placeholder="E-mail (обязательно)" required name="email" class="text-field")
+                    .form-group
+                        textarea(placeholder="Текст (необязательно)" name="text" class="text-field" rows="6")
+                    button(type='submit').main-btn.new_c.new__btn
+                        |Подписаться

@@ -1,0 +1,32 @@
+.form-group {
+	textarea {
+		resize: unset;
+		width: 100%;
+		&::-webkit-scrollbar-track {
+				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+				background-color: #F5F5F5;
+				// border-radius: 10px;
+		}
+
+		&::-webkit-scrollbar {
+			width: 10px;
+			background-color: #F5F5F5;
+		}
+
+		&::-webkit-scrollbar-thumb {
+				// border-radius: 10px;
+				background: @main-color;
+		}
+	}
+}
+
+.new_c.new__form {
+	.text-field {
+		text-align: left;
+	}
+}
+
+.new_c.new__layer {
+	background: url('../img/new-bg_с.png') no-repeat center/cover;
+    .fPa(74%, 70%, 74px, 70, 980px, 1920px);
+}

@@ -1,0 +1,49 @@
+.breadcrumbs {
+	width: 100%;
+	display: flex;
+	margin-bottom: 15px;
+	span {
+		color: @accent-color;
+		font-weight: bold;
+	}
+}
+
+.preview_c__layer {
+	background: url('../img/brands-bg.jpg') no-repeat center/cover;
+	position: relative;
+	.fPa(80%, 110%, 80px, 110px, 980px, 1920px);
+	margin-top: 109px;
+}
+
+.breadcrumb__item {
+transition: all 0.25s linear;
+white-space: nowrap; /* Отменяем перенос текста */
+// overflow: hidden; /* Обрезаем содержимое */
+// text-overflow: ellipsis;
+letter-spacing: 0;
+word-spacing: 0.2px;
+&:hover {
+	color: @accent-color + 45;
+}
+
+&.active:hover{
+	color: @main-color + 45;
+}
+	&:not(:last-child) {
+		margin-right: 15px;
+	}
+
+	&:not(:first-child) {
+		margin-left: 15px;
+	}
+
+
+	color: @accent-color;
+	font-weight: bold;
+	&.active {
+		color: @main-color;
+	}
+}
+
+
+

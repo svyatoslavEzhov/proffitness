@@ -1,0 +1,130 @@
+.offer__layer {
+    .fPa(60%, 96%/2, 60px, 96px/2, 980px, 1920px);
+    .center {
+        max-width: 1920px;
+    }
+}
+
+.offer__description {
+	max-width: 685px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	color: @accent-color;
+}
+.offer__title {
+	margin-bottom: 35px;
+}
+
+.offer__cards {
+	margin-bottom: 53px;
+}
+.gym-cards {
+	.flex(@flex-wrap: wrap, @justify-content: center);
+	width: 100%;
+}
+
+.gym-card {
+	flex: 0 1 100%/3;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: content;
+	cursor: pointer;
+	padding: 10px;
+
+
+	&:hover {
+		&:after {
+			background: rgba(@black, 0.45);
+		}
+
+		.gym-card__hidden {
+			opacity: 1;
+			z-index: 4;
+		}
+
+		.gym-card__name {
+			opacity: 0;
+		}
+	}
+
+	& > *{
+		position: relative;
+		z-index: 4;
+	}
+	&:before {
+		content: '';
+		display: block;
+		padding-top: 70%;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(@black, 0.6);
+		transition: all 0.25s linear;
+		z-index: 3;
+	}
+
+	.gym-card__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+	}
+
+	.gym-card__name {
+		text-transform: uppercase;
+		color: @white;
+		font-weight: 700;
+		text-align: center;
+		.fSize(41.53vw, 41.53px * (768/1920), 41.53px, 768px, 1920px);
+		transition: all 0.25s linear;
+
+	}
+
+	.gym-card__hidden {
+		& > * {
+			position: relative;
+			z-index: 2;
+		}
+		position: absolute;
+		transition: all 0.25s linear;
+		opacity: 0;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.gym-card__hidden-img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			z-index: 0;
+		}
+
+		.gym-card__hidden-text {
+			color: @white;
+		font-weight: 700;
+		text-align: center;
+		.fSize(41.53vw, 41.53px * (768/1920), 41.53px, 768px, 1920px);
+			text-transform: uppercase;
+		}
+	}
+}
+
+.offer__btn {
+	margin: 0 auto;
+}
