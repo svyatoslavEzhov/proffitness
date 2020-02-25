@@ -52,51 +52,54 @@
   }
 
    &.fixed{
-    .ham.hamRotate.ham1 {
-    // display: block;
-    }
     .header__layer {
-      padding-bottom: 0;
-      transition: all 0.2s linear;
-      box-shadow: 0 0 7px rgba(@black, 0.25);
-      .f-container .text-search {
-        bottom: -58vh;
-      }
+      padding-bottom: 10px;
     }
+    // .ham.hamRotate.ham1 {
+    // // display: block;
+    // }
+    // .header__layer {
+    //   padding-bottom: 0;
+    //   transition: all 0.2s linear;
+    //   box-shadow: 0 0 7px rgba(@black, 0.25);
+    //   .f-container .text-search {
+    //     bottom: -58vh;
+    //   }
+    // }
 
-    .header__menu {
-      height: 38px;
-      // position: relative;
-      position: fixed;
-      width: 100vw;
-      height: 100vh;
-      background: @white;
-      z-index: 10;
-      top: 0;
-      left: 0;
-      display: none;
+    // .header__menu {
+    //   height: 38px;
+    //   // position: relative;
+    //   position: fixed;
+    //   width: 100vw;
+    //   height: 100vh;
+    //   background: @white;
+    //   z-index: 10;
+    //   top: 0;
+    //   left: 0;
+    //   display: none;
 
-      &.flex {
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-      }
+    //   &.flex {
+    //     display: flex !important;
+    //     justify-content: center;
+    //     align-items: center;
+    //   }
       
-      .header__menu-list {
-        flex-wrap: wrap;
-        padding-top: 0;
+    //   .header__menu-list {
+    //     flex-wrap: wrap;
+    //     padding-top: 0;
        
        
        
 
-        .header__menu-item {
-          flex-basis: 100%;
-          // display: none;
+    //     .header__menu-item {
+    //       flex-basis: 100%;
+    //       // display: none;
          
-          animation: changeOpac 0.8s linear forwards;
-        }
-      }
-    }
+    //       animation: changeOpac 0.8s linear forwards;
+    //     }
+    //   }
+    // }
   }
 }
 
@@ -107,7 +110,7 @@
 
 .header__layer {
   padding-bottom: 20px;
-  transition: all 0s linear;
+  transition: all 0.2s linear;
   box-shadow: 0 0 3px rgba(@black, 0.15);
   .f-container {
     position: relative;
@@ -524,6 +527,7 @@
   width: max-content;
   max-width: 310px;
   transform-origin: top;
+   z-index: 3;
   &:before {
     content: "";
     position: absolute;
@@ -535,6 +539,7 @@
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 10px solid #fc5e0f;
+ 
   }
 
   .header__menu-link {
@@ -549,6 +554,11 @@
 .header__menu-item {
   padding: 10px 0;
   position: relative;
+
+  // *:not(.header__menu-list-inner) > {
+  //   position: static;
+  //   z-index: -1;
+  // }
   &:hover {
     .header__menu-list-inner {
        display: block;

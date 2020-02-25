@@ -14,14 +14,14 @@ export default function(flag) {
         if ($(this).scrollTop() > 3) {
 
             $('.header').addClass("fixed");
-            $('.header__menu').removeClass('visible');
-            $('.ham').fadeIn(250);
+            // $('.header__menu').removeClass('visible');
+            // $('.ham').fadeIn(250);
 
 
         } else {
             $('.header').removeClass("fixed");
-            $('.header__menu').addClass('visible');
-            $('.ham, .close-btn').fadeOut(0);
+            // $('.header__menu').addClass('visible');
+            // $('.ham, .close-btn').fadeOut(0);
 
         }
     }
