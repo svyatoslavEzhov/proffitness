@@ -1,8 +1,111 @@
 footer.footer
-    .footer__layer.section__layer
-        .center
-            .f-container
-                p.footer__text
-                    |&copy; 2019 Proffitness - Все права защищены!
-                .to-top
-                    +svg2('UpCircle')
+		.footer__layer.section__layer
+				.center
+						.f-container
+							.footer__left
+								h3.footer-title
+									|Контакты
+								.footer__phones.footer-contact
+									i.footer__ico
+										+svg2('smartphone')
+									.footer__phones-nums
+										a.footer__phones-num(href="tel:+380503681595")
+											|(050) 368 15 95
+										a.footer__phones-num(href="tel:+380965017290")
+											|(096) 501 72 90
+								.footer__mail.footer-contact
+									i.footer__ico
+										+svg2('email')
+									.footer__mail-content
+										a.footer__mail-text(href="mailto:office@proffitness.com.ua")
+											|office@proffitness.com.ua
+								.footer__address.footer-contact
+									i.footer__ico
+										+svg2('address')
+									p.footer__address-text
+										|Киев, ул. Михаила Максимовича 34
+								ul.footer__social-list.social-list
+									li.footer__social-item.social-item
+										a.footer__social-link.social-link(href="https://www.instagram.com/proffitness_apus_sports/" target="_blank" rel="nofollow noopener noreffer")
+											+svg2('instagram-symbol')
+									li.footer__social-item.social-item
+										a.footer__social-link.social-link(href="https://www.facebook.com/Proffitness-Apus-Sports-1554162498236031/?ref=bookmarks" target="_blank" rel="nofollow noopener noreffer")
+											+svg2('facebook-logo')
+							.footer__center
+								h3.footer-title
+									|Список разделов:
+								ul.footer__list.footer__list_first
+									li.footer__list-item
+										a.footer__list-link(href="#")
+											|Беговые дорожки
+									li.footer__list-item
+										a.footer__list-link(href="#")
+											|Орбитреки
+									li.footer__list-item
+										a.footer__list-link(href="#")
+											|Степперы
+									li.footer__list-item
+										a.footer__list-link(href="#")
+											|Велотренажеры
+									li.footer__list-item
+										a.footer__list-link(href="#")
+											|Силовые тренажеры
+									li.footer__list-item
+										a.footer__list-link(href="#")
+											|Crossfit
+									li.footer__list-item
+										a.footer__list-link(href="#")
+											|Гантели и диски
+									li.footer__list-item
+										a.footer__list-link(href="#")
+											|Apus sport
+								a.footer__btn.main-btn(href="#")
+									|Скидки
+								ul.footer__list.footer__list_first
+									li.footer__list-item
+										a.footer__list-link(href="#")
+											|О компании
+									li.footer__list-item
+										a.footer__list-link(href="#")
+											|Реставрация
+									li.footer__list-item
+										a.footer__list-link(href="#")
+											|Оплата
+									li.footer__list-item
+										a.footer__list-link(href="#")
+											|Доставка
+									li.footer__list-item
+										a.footer__list-link(href="#")
+											|Гарантия
+									li.footer__list-item
+										a.footer__list-link(href="#")
+											|Наши работы
+									li.footer__list-item
+										a.footer__list-link(href="#")
+											|Статьи
+							.footer__right
+								h3.footer-title
+									|Консультация
+								form#new__form.new__form(method="POST" action="javascript:void(null)")
+										input(type="hidden" name="subject" value="Форма подписки")
+										.form-group
+												input(type="text" placeholder="Имя" required name="name" class="text-field")
+										.form-group
+												input(type="tel" placeholder="Телефон" required name="phone" class="text-field")
+										.form-group
+												input(type="email" placeholder="E-mail" name="email" class="text-field")
+										button(type='submit').main-btn.new__btn
+												|Отправить
+				.center
+						.f-container
+							p.footer__text
+									|&copy; 2020 Proffitness - Все права защищены!
+							.footer__info
+								p.footer__made
+									|Разработано в 
+									a(href="#")
+										|m-lab.digital
+								a.footer__sitemap(href="#")
+									|Карта сайта
+							.to-top
+									+svg2('UpCircle')

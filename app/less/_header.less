@@ -303,7 +303,7 @@
 .header__menu-item {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   svg {
     width: 18px;
     height: 18px;
@@ -566,5 +566,30 @@
       opacity: 1;
       transition: all 0.15s linear;
     }
+  }
+}
+
+.header__menu-arrow {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  svg {
+     max-width: 12px;
+     fill: @font-color;
+     &:hover {
+       fill: @font-color;
+     }
+  }
+ 
+}
+
+.header__menu-item {
+  &:hover {
+        .header__menu-arrow {
+          svg {
+             transform: rotate(180deg);
+             fill: @main-color;
+      }
+    } 
   }
 }

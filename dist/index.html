@@ -14,8 +14,8 @@
     <meta name="twitter:description" content="Some description">
     <title>Profitness site</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;display=swap&amp;subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/libs.min.css?v=1582667883245">
-    <link rel="stylesheet" href="css/main.min.css?v=1582667883245">
+    <link rel="stylesheet" href="css/libs.min.css?v=1582828006325">
+    <link rel="stylesheet" href="css/main.min.css?v=1582828006325">
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-49981753-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -70,7 +70,10 @@
                   <div class="close-btn"><span></span><span></span></div>
                   <ul class="header__menu-list">
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Главная</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#">Каталог товаров</a>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Каталог товаров</a><i class="header__menu-arrow">
+                        <svg>
+                          <use xlink:href="img/sprites/svg/symbol/sprite.svg#down-arrow"></use>
+                        </svg></i>
                       <ul class="header__menu-list-inner">
                         <li class="header__menu-item-inner"><a class="header__menu-link" href="#">Беговые дорожки</a></li>
                         <li class="header__menu-item-inner"><a class="header__menu-link" href="#">Орбитреки</a></li>
@@ -84,7 +87,10 @@
                     </li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Наши контакты</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Скидки</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#">О нас</a>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">О нас</a><i class="header__menu-arrow">
+                        <svg>
+                          <use xlink:href="img/sprites/svg/symbol/sprite.svg#down-arrow"></use>
+                        </svg></i>
                       <ul class="header__menu-list-inner">
                         <li class="header__menu-item-inner"><a class="header__menu-link" href="#">О компании</a></li>
                         <li class="header__menu-item-inner"><a class="header__menu-link" href="#">Реставрация</a></li>
@@ -123,7 +129,7 @@
                 <div class="preview__slide">
                   <div class="preview__slide-wrap"><img class="preview__slide-img_left" src="img/header-simulator.png" alt="Simulator">
                     <div class="preview__slide-content">
-                      <h2 class="preview__slide-title">ICLST INTEGRITY</h2>
+                      <h2 class="preview__slide-title">APUS SPORT</h2>
                       <p class="preview__slide-text">Надежность, простота, <br>лучшее соотношение цены и качества</p><a class="main-btn preview__slide-btn">Подробнее</a>
                     </div><img class="preview__slide-img_right" src="img/header-sportwoman.png" alt="Sportswoman">
                   </div>
@@ -131,7 +137,7 @@
                 <div class="preview__slide">
                   <div class="preview__slide-wrap"><img class="preview__slide-img_left" src="img/header-simulator.png" alt="Simulator">
                     <div class="preview__slide-content">
-                      <h2 class="preview__slide-title">ICLST INTEGRITY</h2>
+                      <h2 class="preview__slide-title">APUS SPORT</h2>
                       <p class="preview__slide-text">Надежность, простота, <br>лучшее соотношение цены и качества</p><a class="main-btn preview__slide-btn">Подробнее</a>
                     </div><img class="preview__slide-img_right" src="img/header-sportwoman.png" alt="Sportswoman">
                   </div>
@@ -139,7 +145,7 @@
                 <div class="preview__slide">
                   <div class="preview__slide-wrap"><img class="preview__slide-img_left" src="img/header-simulator.png" alt="Simulator">
                     <div class="preview__slide-content">
-                      <h2 class="preview__slide-title">ICLST INTEGRITY</h2>
+                      <h2 class="preview__slide-title">APUS SPORT</h2>
                       <p class="preview__slide-text">Надежность, простота, <br>лучшее соотношение цены и качества</p><a class="main-btn preview__slide-btn">Подробнее</a>
                     </div><img class="preview__slide-img_right" src="img/header-sportwoman.png" alt="Sportswoman">
                   </div>
@@ -333,28 +339,88 @@
           </div>
         </div>
       </div>
-      <div class="new">
-        <div class="new__layer section__layer">
-          <div class="center">
-            <h2 class="h2-title_l new__title">При добавлении новых товаров, вы узнаете об этом первыми!</h2>
-            <div class="f-container">
-              <form class="new__form" id="new__form" method="POST" action="javascript:void(null)">
-                <input type="hidden" name="subject" value="Форма подписки">
-                <div class="form-group">
-                  <input class="text-field" type="email" placeholder="Ваш e-mail" required name="email">
-                </div>
-                <button class="main-btn new__btn" type="submit">Подписаться</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
     </main>
     <footer class="footer">
       <div class="footer__layer section__layer">
         <div class="center">
           <div class="f-container">
-            <p class="footer__text">&copy; 2019 Proffitness - Все права защищены!</p>
+            <div class="footer__left">
+              <h3 class="footer-title">Контакты</h3>
+              <div class="footer__phones footer-contact"><i class="footer__ico">
+                  <svg>
+                    <use xlink:href="img/sprites/svg/symbol/sprite.svg#smartphone"></use>
+                  </svg></i>
+                <div class="footer__phones-nums"><a class="footer__phones-num" href="tel:+380503681595">(050) 368 15 95</a><a class="footer__phones-num" href="tel:+380965017290">(096) 501 72 90</a></div>
+              </div>
+              <div class="footer__mail footer-contact"><i class="footer__ico">
+                  <svg>
+                    <use xlink:href="img/sprites/svg/symbol/sprite.svg#email"></use>
+                  </svg></i>
+                <div class="footer__mail-content"><a class="footer__mail-text" href="mailto:office@proffitness.com.ua">office@proffitness.com.ua</a></div>
+              </div>
+              <div class="footer__address footer-contact"><i class="footer__ico">
+                  <svg>
+                    <use xlink:href="img/sprites/svg/symbol/sprite.svg#address"></use>
+                  </svg></i>
+                <p class="footer__address-text">Киев, ул. Михаила Максимовича 34</p>
+              </div>
+              <ul class="footer__social-list social-list">
+                <li class="footer__social-item social-item"><a class="footer__social-link social-link" href="https://www.instagram.com/proffitness_apus_sports/" target="_blank" rel="nofollow noopener noreffer">
+                    <svg>
+                      <use xlink:href="img/sprites/svg/symbol/sprite.svg#instagram-symbol"></use>
+                    </svg></a></li>
+                <li class="footer__social-item social-item"><a class="footer__social-link social-link" href="https://www.facebook.com/Proffitness-Apus-Sports-1554162498236031/?ref=bookmarks" target="_blank" rel="nofollow noopener noreffer">
+                    <svg>
+                      <use xlink:href="img/sprites/svg/symbol/sprite.svg#facebook-logo"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="footer__center">
+              <h3 class="footer-title">Список разделов:</h3>
+              <ul class="footer__list footer__list_first">
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Беговые дорожки</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Орбитреки</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Степперы</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Велотренажеры</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Силовые тренажеры</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Crossfit</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Гантели и диски</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Apus sport</a></li>
+              </ul><a class="footer__btn main-btn" href="#">Скидки</a>
+              <ul class="footer__list footer__list_first">
+                <li class="footer__list-item"><a class="footer__list-link" href="#">О компании</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Реставрация</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Оплата</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Доставка</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Гарантия</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Наши работы</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Статьи</a></li>
+              </ul>
+            </div>
+            <div class="footer__right">
+              <h3 class="footer-title">Консультация</h3>
+              <form class="new__form" id="new__form" method="POST" action="javascript:void(null)">
+                <input type="hidden" name="subject" value="Форма подписки">
+                <div class="form-group">
+                  <input class="text-field" type="text" placeholder="Имя" required name="name">
+                </div>
+                <div class="form-group">
+                  <input class="text-field" type="tel" placeholder="Телефон" required name="phone">
+                </div>
+                <div class="form-group">
+                  <input class="text-field" type="email" placeholder="E-mail" name="email">
+                </div>
+                <button class="main-btn new__btn" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="center">
+          <div class="f-container">
+            <p class="footer__text">&copy; 2020 Proffitness - Все права защищены!</p>
+            <div class="footer__info">
+              <p class="footer__made">Разработано в <a href="#">m-lab.digital</a></p><a class="footer__sitemap" href="#">Карта сайта</a>
+            </div>
             <div class="to-top">
               <svg>
                 <use xlink:href="img/sprites/svg/symbol/sprite.svg#UpCircle"></use>
@@ -406,7 +472,7 @@
       </div>
     </div>
     <!-- include pug/layouts/_popup-->
-    <script src="js/libs.min.js?v=1582667883245"></script>
-    <script src="js/script.min.js?v=1582667883245" async></script>
+    <script src="js/libs.min.js?v=1582828006326"></script>
+    <script src="js/script.min.js?v=1582828006326" async></script>
   </body>
 </html>
