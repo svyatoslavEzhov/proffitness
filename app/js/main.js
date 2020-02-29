@@ -17,6 +17,7 @@ import totop from './totop'
 import { send_form } from './send'
 import test from './test'
 import axios from './axios'
+import singlesliders from './single-page-sliders'
 
 
 
@@ -45,7 +46,8 @@ let main = {
         totop();
         this.send();
         test();
-        axios();
+        // axios();
+        singlesliders();
 
     },
 
