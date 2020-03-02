@@ -13,7 +13,10 @@ import magnificPopup from 'magnific-popup';
 // import 'core-js/features/promise';
 import noUiSlider from "noUiSlider";
 import wNumb from "wNumb";
-import Axios from 'axios';
+import Drift from 'drift-zoom';
+// import event from './Event.js';
+// import magnifier from './Magnifier.js';
+// import Axios from 'axios';
 
 
 
@@ -21,8 +24,19 @@ window.$ = $;
 window.jQuery = $;
 window.noUiSlider = noUiSlider;
 window.wNumb = wNumb;
-window.Axios = Axios;
+window.Drift = Drift;
 
+// window.Eve = event;
+// window.Magnifier = magnifier;
+// // window.Axios = Axios;
+
+// let evt = new Eve(),
+//     m = new Magnifier(evt);
+
+
+// export {
+// 	Drift
+// }
 
 
 // window.isotope = $.isotope;

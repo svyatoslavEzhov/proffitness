@@ -275,7 +275,15 @@ html(class=html.classList)&attributes(html.attrs)
 		block content
 		block scripts
 			script(src=`js/libs.min.js?v=${Date.now()}`)
+			//- script(src=`js/Event.js?v=${Date.now()}`)
+			//- script(src=`js/Magnifier.js?v=${Date.now()}`)
 			script(src=`js/script.min.js?v=${Date.now()}` async)
+			//- script(type='text/javascript').
+			//- 	window.onload = function(){
+			//- 		var evt = new Event(),
+			//- 		m = new Magnifier(evt);
+			//- 		m.attach({thumb: '.thumb'});
+			//- 	}
 			//- script(type='text/javascript').
 			//- 	function loadScript() {
 			//- 	let fragment = document.createDocumentFragment();

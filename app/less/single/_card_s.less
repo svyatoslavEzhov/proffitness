@@ -50,24 +50,30 @@
 
     .card_s__image {
         
-        flex: 0 1 400/980 * 100%;
+        flex: 0 1 340/980 * 100%;
         margin-right: 35px;
-        max-width: 400px;
+        max-width: 340px;
         box-shadow: 0 0 5px rgba(@black, 0.2);
         img {
             // padding: 80px 0;
-            min-width: 360px + 45px;
+            min-width: 310px;
         }
     }
 
     .cars_s__content {
         padding-top: 10px;
-        flex: 0 1 (980 - 555)/980 * 100%;
+        flex: 0 1 (980 - 100 - 340)/980 * 100%;
+        position: relative;
     }
 
     .card_s__preview-slider {
-        flex: 0 1 20%;
+        flex: 0 1 (100/980) * 100%;
         margin-right: 35px;
+        max-width: 100px;
+    }
+
+    .card_s__preview-slide {
+        max-width: 100px;
     }
 }
 
@@ -186,11 +192,12 @@
 }
 
 .card_s__tab-descr {
-    box-shadow: 0 0 5px rgba(@black, 0.2);
+    // box-shadow: 0 0 5px rgba(@black, 0.2);
     padding-top: 58px;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 50px;
+    height: 100%;
 }
 
 .card_s__phone {
@@ -257,6 +264,7 @@
 
 .card_s__image-slide {
     position: relative;
+    max-width: 340px;
     &:before {
         content: '';
         padding-top: 120%;
@@ -271,4 +279,73 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.card_s__btns {
+    display: flex;
+    .card_s__btn {
+        flex: 0 1 30%;
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}
+
+
+.drift-zoom-pane {
+    position: absolute;
+    top: 0;
+    left:   0;
+    width:  100%;
+    height:     100%;
+    border: 2px solid #ccc;
+
+    img {
+        max-width: unset;
+        height: auto !important;
+    }
+}
+
+
+.drift-bounding-box {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100px;
+  height: 100px;
+
+}
+
+.card_s__tab-description {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+     box-shadow: 0 0 5px rgba(@black, 0.2);
+}
+
+.card_s__description-left {
+    flex: 0 1 60%;
+    border-right: 2px solid rgba(@black, 0.08);
+
+    .card_s__tab-descr {
+    // box-shadow: -2px 1px 5px 1px rgba(@black, 0.2);
+    padding-top: 58px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    height: 100%;
+}
+}
+
+.card_s__description-right {
+    flex: 0 1 40%;
+}
+
+.card_s__list-item {
+    display: flex;
+    padding: 10px 5px;
+    align-items: center;
+    justify-content: space-between;
+    &:nth-child(odd) {
+        background: @main-color;
+        color: @white;
+    }
 }

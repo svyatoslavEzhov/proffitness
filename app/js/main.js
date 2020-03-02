@@ -9,14 +9,14 @@ import filterSlider from './filter-slider'
 import filterMore from './filter_more'
 import filterShow from './filter_show'
 import raiting from './raiting'
-import tabs from './tabs'
+// import tabs from './tabs'
 import magnif from './magnify'
 import popup from './popup'
 import mob from './mob-filter' 
 import totop from './totop'
 import { send_form } from './send'
 import test from './test'
-import axios from './axios'
+// import axios from './axios'
 import singlesliders from './single-page-sliders'
 
 
@@ -39,7 +39,7 @@ let main = {
         filterMore();
         filterShow();
         raiting();
-        tabs();
+        // tabs();
         magnif();
         popup();
         mob();
