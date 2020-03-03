@@ -1,0 +1,96 @@
+.text__layer {
+	.fPa(60%, 96%/2, 60px, 96px/2, 980px, 1920px);
+}
+
+
+.text__ordered-list {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 25px;
+	counter-reset: num; /* Задаём имя счетчика */
+		& li {
+			  padding-left: 35px;
+			  position: relative;
+		}
+	 & li::before {
+    content: counter(num) '. '; /* Выводим число */
+    counter-increment: num; /* Увеличиваем значение счётчика */
+    color: @main-color;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    // font-style: italic;
+
+
+   }
+}
+
+.text__paragraph {
+	&:not(:last-child) {
+			margin-bottom: 25px;
+	}
+
+}
+
+.text__content {
+	.h1-title {
+		margin-bottom: 45px;
+	}
+	.h2-title {
+		 .fSize(34vw, 34px * (576/980), 34px, 576px, 980px);
+  line-height: 1;
+  color: #313131;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  text-transform: unset;
+  	margin-bottom: 35px;
+	}
+}
+
+
+.text__unordered-list {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	flex-wrap: wrap;
+	margin: 0 -25px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+
+.text__unordered-list-item {
+	flex: 0 1 28.4%;
+	margin: 0 25px;
+}
+
+.text__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 45px;
+	height: 45px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 160%;
+		height: 160%;
+		border-radius: 50%;
+		background: @main-color;
+		z-index: 1;
+	}
+	svg {
+		max-width: 45px;
+		max-height: 45px;
+		fill: @white;
+		position: relative;
+		z-index: 2;
+	}
+}
