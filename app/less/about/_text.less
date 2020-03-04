@@ -6,7 +6,8 @@
 .text__ordered-list {
 	padding: 0;
 	margin: 0;
-	margin-bottom: 25px;
+	    line-height: 2.14285714;
+	margin-bottom: 35px;
 	counter-reset: num; /* Задаём имя счетчика */
 		& li {
 			  padding-left: 35px;
@@ -28,25 +29,48 @@
 }
 
 .text__paragraph {
+	    line-height: 2.14285714;
 	&:not(:last-child) {
-			margin-bottom: 25px;
+			margin-bottom: 35px;
+	}
+
+	a {
+		display: inline-block;
+		color: @main-color;
+		position: relative;
+
+		&:before {
+			content: '';
+			width: 0%;
+			position: absolute;
+			height: 2px;
+			background: @main-color;
+			bottom: 1px;
+			transition: width 0.25s linear;
+		}
+		&:hover {
+				&:before {
+					width: 100%;
+			}
+		}
 	}
 
 }
 
 .text__content {
 	.h1-title {
-		margin-bottom: 45px;
+		margin-bottom: 55px;
 	}
 	.h2-title {
 		 .fSize(34vw, 34px * (576/980), 34px, 576px, 980px);
-  line-height: 1;
+		   line-height: 1.35;
+  // line-height: 1;
   color: #313131;
   font-weight: 700;
   text-align: center;
   position: relative;
   text-transform: unset;
-  	margin-bottom: 35px;
+  	margin-bottom: 45px;
 	}
 }
 
@@ -57,8 +81,9 @@
 	align-items: stretch;
 	flex-wrap: wrap;
 	margin: 0 -25px;
-	margin-bottom: 50px;
-	margin-top: 50px;
+	margin-bottom: 60px;
+	margin-top: 60px;
+		    line-height: 2.14285714;
 }
 
 
@@ -75,7 +100,7 @@
 	width: 45px;
 	height: 45px;
 	margin: 0 auto;
-	margin-bottom: 25px;
+	margin-bottom: 35px;
 	position: relative;
 	&:before {
 		content: '';
@@ -92,5 +117,14 @@
 		fill: @white;
 		position: relative;
 		z-index: 2;
+	}
+}
+
+.text__unordered-list-paragraph {
+	text-align: center;
+	span {
+		color: @main-color;
+		display: block;
+		font-weight: 700;
 	}
 }

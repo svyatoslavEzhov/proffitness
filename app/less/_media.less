@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 1200px) {
     .top__filter-wrap-list-item:not(:last-child) .top__filter-wrap-list{
         flex-wrap: wrap;
@@ -104,13 +105,36 @@
         display: none !important;
     }
 
+
+    .hidden-mob-item, .header__right_top {
+        display: none;
+    }
+
+    .heder__right {
+        flex: 0 1 75%;
+    }
+
+    .heder__left {
+        margin-bottom: 0;
+    }
+
+    .header .ham.hamRotate.ham1 {
+        margin-left: 0;
+    }
+
+    .header__layer .f-container {
+        justify-content: space-between;
+        flex-wrap: nowrap
+    }
+
+    .header__layer {
+        padding-bottom: 15px;
+    }
+
     .header .ham.hamRotate.ham1 {
         display: block !important;
     }
 
-    .header__layer {
-        padding-bottom: 0;
-    }
 
     .header__layer .f-container .text-search, .header.fixed .header__layer .f-container .text-search{
         bottom: -46vh;
@@ -188,8 +212,13 @@
         flex-wrap: wrap;
     }
 
-    .preview_ca__layer, .preview_s__layer, .preview_c__layer {
-        margin-top: 229px;
+    // .preview_ca__layer, .preview_s__layer, .preview_c__layer {
+    //     margin-top: 229px;
+    // }
+
+    .preview__layer-- {
+        margin-top: 56px + 15px;
+
     }
 
     .breadcrumb__item {
@@ -225,6 +254,20 @@
 
     .header__layer {
         padding-top: 15px;
+    }
+
+    .mobile-ul  {
+        display: flex;  
+        justify-content: flex-end;
+        align-items: center;
+        width:  100%;
+        margin-right:   15px;
+
+        .header__menu-item {
+            &:not(:last-child) {
+                margin-right:  10px;
+            }
+        }
     }
 }
 
@@ -428,4 +471,22 @@
     .card_s__top {
         margin-bottom: 40px;
     }
+
+    .mobile-ul {
+        flex-wrap: wrap;
+        .header__menu-item {
+            justify-content: flex-end;
+            flex-basis: 100%;
+            
+            padding-top:0;
+            &:not(:last-child) {
+                margin-right:   0;
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+
 }
