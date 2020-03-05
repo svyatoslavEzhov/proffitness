@@ -8,6 +8,13 @@
 .brands__wrap {
     .flex();
     width: 100%;
+    max-width: 100%;
+    .slick-slide {
+        margin: 0 15px;
+    }
+    .slick-list {
+         margin: 0 -15px;
+    }
 }
 
 .brands__title {
@@ -15,6 +22,7 @@
 }
 
 .brands__card {
+   
     max-width: 224px;
     transition: all 0.25s linear;
     &:not(:last-child) {

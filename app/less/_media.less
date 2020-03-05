@@ -98,12 +98,65 @@
     .card_s__price {
         margin-right: 25px;
     }
+
+    .footer__layer {
+        .footer__left, .footer__right, .footer__center {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 35px;
+            }
+        }
+
+        .footer__layer .f-container>div:not(:last-child) {
+            margin-right: 0;
+        }
+
+    .footer__btn {
+        max-width: 320px;
+    }
+
+    .footer-contacts {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-contact:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+
+
+    .footer__social-list {
+        justify-content: center
+    }
+
+    .footer__address-text {
+        text-align: left
+    }
+
+    .footer__phones-num {
+        white-space: nowrap
+    }
+
+    .footer__list {
+        justify-content: center;
+    }
+
+    .footer__list-item:nth-of-type(2n-1) {
+        margin-right: 0;
+        width: auto;
+    }
+
+    .footer__list-item:not(:last-child) {
+        margin-right: 10px;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .header__menu.visible {
         display: none !important;
     }
+
 
 
     .hidden-mob-item, .header__right_top {
@@ -267,6 +320,13 @@
             &:not(:last-child) {
                 margin-right:  10px;
             }
+        }
+    }
+
+    .footer-contacts {
+        flex-wrap: wrap;
+        & > div {
+            flex-basis: 100%
         }
     }
 }
@@ -488,5 +548,17 @@
             }
         }
     }
+    
+    .footer__info {
+        flex-basis: 100%;
+        flex-direction: column;
+        text-align: center;
 
+    }
+
+    .footer__text {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }

@@ -4,6 +4,9 @@
 
   .f-container {
     align-items: stretch;
+    & > div:not(:last-child) {
+      margin-right: 15px;
+    }
   }
 }
 
@@ -198,4 +201,8 @@
 
 .footer__sitemap {
   color: @main-color;
+}
+
+.footer-contacts {
+  margin-bottom: 15px;
 }

@@ -18,6 +18,7 @@ import { send_form } from './send'
 import test from './test'
 // import axios from './axios'
 import singlesliders from './single-page-sliders'
+import brandslider from './brands.slider'
 
 
 
@@ -48,6 +49,7 @@ let main = {
         test();
         // axios();
         singlesliders();
+        brandslider();
 
     },
 
