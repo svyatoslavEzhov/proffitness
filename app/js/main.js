@@ -14,11 +14,12 @@ import magnif from './magnify'
 import popup from './popup'
 import mob from './mob-filter' 
 import totop from './totop'
-import { send_form } from './send'
+// import { send_form } from './send'
 import test from './test'
 // import axios from './axios'
 import singlesliders from './single-page-sliders'
 import brandslider from './brands.slider'
+import sorting from './sotring'
 
 
 
@@ -29,7 +30,7 @@ export let log = function() {
         return console.log.apply(console, arguments);
     } catch (err) {}
 }
-log(send_form);
+// log(send_form);
 let main = {
     init() {
         previewSlider();
@@ -45,19 +46,20 @@ let main = {
         popup();
         mob();
         totop();
-        this.send();
+        // this.send();
         test();
         // axios();
         singlesliders();
         brandslider();
+        sorting();
 
     },
 
-    send() {
-        $('form').on('submit', function() {
-            send_form(this.id, 'mail/send.php');
-        })
-    }
+    // send() {
+    //     $('form').on('submit', function() {
+    //         send_form(this.id, 'mail/send.php');
+    //     })
+    // }
 
 
 };

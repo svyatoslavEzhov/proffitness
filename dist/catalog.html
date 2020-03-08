@@ -14,8 +14,8 @@
     <meta name="twitter:description" content="Some description">
     <title>Profitness site</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;display=swap&amp;subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/libs.min.css?v=1583421205601">
-    <link rel="stylesheet" href="css/main.min.css?v=1583421205601">
+    <link rel="stylesheet" href="css/libs.min.css?v=1583690501044">
+    <link rel="stylesheet" href="css/main.min.css?v=1583690501044">
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-49981753-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -208,20 +208,14 @@
                 <div class="filter_ca__sort">
                   <div class="select">
                     <select class="filter_ca__select">
-                      <option value="По популярности">По популярности</option>
-                      <option value="По возрастанию цены">По возрастанию цены</option>
-                      <option value="По уменьшению цены">По уменьшению цены</option>
+                      <option value="Up">По возрастанию цены</option>
+                      <option value="Down">По уменьшению цены</option>
                     </select>
                   </div>
-                  <div class="form-group">
-                    <input type="checkbox" value="Lifefitness" id="filter_ca__radio1">
-                    <label class="filter_ca__lable" for="filter_ca__radio1"><span><span></span></span>Lifefitness</label>
-                    <input type="checkbox" value="Precor" id="filter_ca__radio2">
-                    <label class="filter_ca__lable" for="filter_ca__radio2"><span><span></span></span>Precor</label>
-                    <input type="checkbox" value="Technogym" id="filter_ca__radio3">
-                    <label class="filter_ca__lable" for="filter_ca__radio3"><span><span></span></span>Technogym</label>
-                  </div>
                   <div id="filter_ca__slider"></div>
+                  <input class="price-sort" type="hidden" name="PriceSorting" value="">
+                  <input class="price-min" type="hidden" name="PriceMin" value="">
+                  <input class="price-max" type="hidden" name="PriceMax" value="">
                   <button class="main-btn filter_ca__btn" type="submit">Сортировать</button>
                 </div>
                 <div class="filter_ca__show">
@@ -602,10 +596,22 @@
             </div>
           </div>
         </div>
+        <div class="zoom-anim-dialog mfp-hide small-dialog" id="thanks-dialog">
+          <div class="success-checkmark">
+            <div class="check-icon"><span class="icon-line line-tip"></span><span class="icon-line line-long"></span>
+              <div class="icon-circle"></div>
+              <div class="icon-fix"></div>
+            </div>
+          </div>
+          <h2>Спасибо, Ваша заявка успешно отправлена!</h2>
+        </div>
+        <div class="zoom-anim-dialog mfp-hide small-dialog" id="error-dialog">
+          <h2>При отправке возникла ошибка, поробуйте, пожалуйста, еще раз!</h2>
+        </div>
       </div>
     </div>
     <!-- include pug/layouts/_popup-->
-    <script src="js/libs.min.js?v=1583421205601"></script>
-    <script src="js/script.min.js?v=1583421205601" async></script>
+    <script src="js/libs.min.js?v=1583690501045"></script>
+    <script src="js/script.min.js?v=1583690501045" async></script>
   </body>
 </html>

@@ -329,6 +329,22 @@
             flex-basis: 100%
         }
     }
+
+
+    .card_s__tab-description {
+        flex-wrap: wrap;
+    }
+
+    .card_s__description-left {
+        border-right: unset;
+        .card_s__tab-text:nth-child(2) {
+            margin-bottom: 0;
+        }
+    }
+
+    .card_s__description-left, .card_s__description-right {
+        flex-basis: 100%
+    }
 }
 
 
@@ -502,7 +518,7 @@
         padding: 10px 5px;
     }
 
-    .card_s__tab-descr {
+    .card_s__description-left .card_s__tab-descr, .card_s__tab-descr {
         padding: 38px 30px 30px;
     }
 

@@ -14,8 +14,8 @@
     <meta name="twitter:description" content="Some description">
     <title>Profitness site</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;display=swap&amp;subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/libs.min.css?v=1583421205912">
-    <link rel="stylesheet" href="css/main.min.css?v=1583421205912">
+    <link rel="stylesheet" href="css/libs.min.css?v=1583690501396">
+    <link rel="stylesheet" href="css/main.min.css?v=1583690501396">
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-49981753-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -221,28 +221,6 @@
           </div>
         </div>
       </div>
-      <div class="new_c new">
-        <div class="new_c new__layer section__layer">
-          <div class="center">
-            <h2 class="h2-title_m new_c new__title">Есть вопросы? — Напишите нам</h2>
-            <div class="f-container">
-              <form class="new_c new__form" id="new__form" method="POST" action="javascript:void(null)">
-                <input type="hidden" name="subject" value="Форма подписки">
-                <div class="form-group">
-                  <input class="text-field" type="name" placeholder="Имя (обязательно)" required name="name">
-                </div>
-                <div class="form-group">
-                  <input class="text-field" type="email" placeholder="E-mail (обязательно)" required name="email">
-                </div>
-                <div class="form-group">
-                  <textarea class="text-field" placeholder="Текст (необязательно)" name="text" rows="6"></textarea>
-                </div>
-                <button class="main-btn new_c new__btn" type="submit">Подписаться</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
     </main>
     <footer class="footer">
       <div class="footer__layer section__layer">
@@ -375,10 +353,22 @@
             </div>
           </div>
         </div>
+        <div class="zoom-anim-dialog mfp-hide small-dialog" id="thanks-dialog">
+          <div class="success-checkmark">
+            <div class="check-icon"><span class="icon-line line-tip"></span><span class="icon-line line-long"></span>
+              <div class="icon-circle"></div>
+              <div class="icon-fix"></div>
+            </div>
+          </div>
+          <h2>Спасибо, Ваша заявка успешно отправлена!</h2>
+        </div>
+        <div class="zoom-anim-dialog mfp-hide small-dialog" id="error-dialog">
+          <h2>При отправке возникла ошибка, поробуйте, пожалуйста, еще раз!</h2>
+        </div>
       </div>
     </div>
     <!-- include pug/layouts/_popup-->
-    <script src="js/libs.min.js?v=1583421205912"></script>
-    <script src="js/script.min.js?v=1583421205912" async></script>
+    <script src="js/libs.min.js?v=1583690501396"></script>
+    <script src="js/script.min.js?v=1583690501396" async></script>
   </body>
 </html>

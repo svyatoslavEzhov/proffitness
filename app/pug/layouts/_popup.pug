@@ -32,3 +32,13 @@
 							input(type="tel" placeholder="Ваш телефон" required name="phone" class="text-field")
 						button(type='submit').main-btn.callback-btn
 							|Отправить
+		#thanks-dialog.zoom-anim-dialog.mfp-hide.small-dialog
+			.success-checkmark
+				.check-icon
+					span.icon-line.line-tip
+					span.icon-line.line-long
+					.icon-circle
+					.icon-fix
+			h2 Спасибо, Ваша заявка успешно отправлена!
+		#error-dialog.zoom-anim-dialog.mfp-hide.small-dialog
+			h2 При отправке возникла ошибка, поробуйте, пожалуйста, еще раз!
