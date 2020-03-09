@@ -7,6 +7,10 @@ export default function() {
 
 let thumbs= document.querySelectorAll('.zoom');
 
+$(window).on('load', function(){
+	if($(this).width() > 576) {
+
+
 thumbs.forEach((el, i)=>{
 		let thumb = el;
 
@@ -17,6 +21,9 @@ thumbs.forEach((el, i)=>{
 	hoverBoundingBox: true
 });
 
+})
+
+	}
 })
 
 

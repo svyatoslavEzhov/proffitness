@@ -7,6 +7,14 @@ export default function(){
   slidesToScroll: 1,
   arrows: false,
   fade: true,
+  responsive: [
+    {
+      breakpoint: 576,
+      settings: {
+        dots: true
+      }
+    }
+  ]
   // asNavFor: '.card_s__preview-slider',
   // adaptiveHeight:true
 }).on('afterChange', function(event, slick, currentSlide, nextSlide){
