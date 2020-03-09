@@ -150,6 +150,28 @@
     .footer__list-item:not(:last-child) {
         margin-right: 10px;
     }
+
+    .card_s__btns {
+        flex-wrap: wrap
+    }
+
+    .card_s__info {
+        flex-wrap: wrap
+    }
+
+    .card_s__price {
+        // margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .card_s__btns .card_s__btn {
+        flex-basis: 100%;
+    
+    }
+
+    .card_s__btns .card_s__btn:not(:last-child) {
+            margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -345,6 +367,32 @@
     .card_s__description-left, .card_s__description-right {
         flex-basis: 100%
     }
+
+    .contact_c__layer {
+        .f-container {
+            flex-wrap: wrap;
+        }
+
+        .contact_c__left, .contact_c__right {
+            flex-basis: 100%;
+        }
+
+        .contact_c__left {
+            margin-bottom:  35px;
+        }
+    }
+
+     .card_s__btns .card_s__btn:not(:last-child) {
+            margin-right: 15px;
+    }
+
+    .card_s__name, .card_s__text {
+        text-align: center;
+    }
+
+    .card_s__info {
+        justify-content: center;
+    }
 }
 
 
@@ -492,8 +540,8 @@
         }
     }
 
-    .preview_ca__layer, .preview_c__layer, .preview_s__layer {
-        margin-top: 152px;
+    .preview_ca__layer, .preview_c__layer, .preview_s__layer, .preview__layer-- {
+        margin-top: 81px;
     }
 
     .contact_c__phone {
@@ -576,5 +624,35 @@
         text-align: center;
         width: 100%;
         margin-bottom: 15px;
+    }
+
+    .map_c__layer {
+        padding: 0;
+    }
+
+    .contact_c__left>div:not(:last-child) {
+        margin-bottom:  20px;
+    }
+
+    .contact_c__left .contact_c__phone {
+        margin-bottom: 3px;
+    }
+
+    .card_s__top .card_s__image, .card_s__image-slide {
+        max-width: 280px;
+    }
+
+    .card_s__top, .card_s__btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_s__btns .card_s__btn:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .card_s__top  .card_s__preview-slider {
+        margin-right: 0;
+        margin-bottom: 25px;
     }
 }

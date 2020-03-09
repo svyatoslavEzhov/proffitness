@@ -24,6 +24,51 @@
 	}
 }
 
+.contact_c__left {
+	  .fSize(22vw, 22px * (768/980), 22px, 768px, 980px);
+	  &>div:not(:last-child) {
+			margin-bottom: 35px;
+	  }
+
+	  &>div {
+	  	position: relative;	
+	  	padding-left: 55px;
+	  }
+
+	  p:not(:last-child) {
+	  	margin-bottom: 	10px;
+	  }
+
+	  i, svg {
+	  	max-width: 32px;
+	  	max-height: 32px;
+	  }
+
+	  svg {
+	  	fill: @white;
+	  	position: relative;
+	  	z-index: 2;
+	  }
+
+	  i {
+	  	position: absolute;
+	  	top: 0;
+	  	left: 	0;
+	  	&:before {
+	  		content: '';
+	  		width: 	135%;
+	  		height: 	135%;
+	  		border-radius: 50%;
+	  		background:	@main-color;
+	  		position: absolute;	
+	  		z-index: 1;
+	  		top: 50%;
+	  		left: 	50%;
+	  		transform: translate(-50%, -50%);
+	  	}
+	  }
+}
+
 // .contact_c__top {
 // 	width: 100%;
 // 	max-width: 1135px;

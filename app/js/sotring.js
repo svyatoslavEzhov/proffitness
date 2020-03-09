@@ -10,9 +10,13 @@ export default function() {
         $('input.price-sort').val(select);
     })
 
-    filterSlider.noUiSlider.on('update', function (values, handle) {
 
-    priceMin.value = Math.round(values[0]);
-    priceMax.value = Math.round(values[1]);
-});
+    if(filterSlider) {
+            filterSlider.noUiSlider.on('update', function (values, handle) {
+
+                priceMin.value = Math.round(values[0]);
+                priceMax.value = Math.round(values[1]);
+            });
+    }
+
 }
