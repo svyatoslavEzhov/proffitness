@@ -524,7 +524,7 @@
   left: 50%;
   background: #fc5e0f;
   padding: 15px 25px;
-  width: max-content;
+  width: auto;
   max-width: 310px;
   transform-origin: top;
    z-index: 3;
@@ -542,12 +542,20 @@
  
   }
 
+  & > * {
+   white-space: nowrap;
+  }
+
   .header__menu-link {
     color: #fff;
     &:before {
       background: #fff;
     }
   }
+}
+
+.header__consultation-btn {
+  white-space: nowrap;
 }
 
 
