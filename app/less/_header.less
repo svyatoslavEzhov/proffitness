@@ -167,6 +167,12 @@
   .flex()
 }
 
+.header__menu-item-inner {
+  color: @white;
+  font-size: .8125rem;
+  font-weight: 600;
+}
+
 .header__menu-list {
   .flex();
   padding-top: 15px;
@@ -275,12 +281,13 @@
   }
 }
 
-.header__menu-link {
+.header__menu-link, .header__menu-link-2 {
   position: relative;
   font-weight: 600;
   transition: all 0.2s ease-in;
   font-size: 13/16 * 1rem;
   letter-spacing: 0.1px;
+  cursor: pointer;
   &:before {
     content: '';
     width: 0px;
@@ -336,6 +343,30 @@
   }
 }
 
+
+.menu-elem__inner {
+    display: flex;  
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__menu-arrow-inner {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:  10px;
+    &:hover {
+      svg {
+        fill: @white;
+      }
+    }
+    svg {
+      max-width: 12px;
+      max-height: 12px;
+      fill: @white;
+    }
+}
 
 .ham {
   cursor: pointer;
@@ -514,7 +545,7 @@
 }
 
 
-.header__menu-list-inner {
+.header__menu-list-inner, .header__menu-list-inner-2 {
   // display: none;
   transform: scaleY(0) translateX(-50%);
   opacity: 0;
@@ -542,7 +573,7 @@
  
   }
 
-  .header__menu-link {
+  .header__menu-link, .header__menu-link-2 {
     color: #fff;
     &:before {
       background: #fff;
@@ -550,6 +581,40 @@
   }
 }
 
+.header__menu-list-inner-2 {
+  top: 0%;
+  left: 100%;
+  transform: scaleY(0) translateX(0);
+   &:before {
+    content: none;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: -19px;
+  //   transform: translateY(-50%);
+  //    width: 0; 
+  // height: 0; 
+  // border-left: 10px solid transparent;
+  // border-right: 10px solid #fc5e0f;
+  // border-bottom: 10px solid transparent;
+  //  border-top: 10px solid transparent;
+ 
+  }
+
+}
+
+
+.menu-elem__inner {
+  position: relative;
+  padding-bottom: 10px;
+  &:hover {
+    .header__menu-list-inner-2 {
+        display: block;
+      transform: scaleY(1) translateX(0);
+      opacity: 1;
+      transition: all 0.15s linear;
+    }
+  }
+}
 
 .header__menu-item {
   padding: 10px 0;

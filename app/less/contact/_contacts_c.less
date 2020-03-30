@@ -4,15 +4,36 @@
 
 .contact_c__layer {
 	.fPa(52%, 46%, 52px, 46px, 980px, 1920px);
+	position: relative;	
 	background: url(../img/new-bg_с.png) no-repeat center/cover;
+	&:before {
+		content: '';
+		position: absolute;	
+		width: 	100%;
+		height: 	100%;
+		top: 0;
+		left: 	0;
+		background: rgba(255,255,255,0.85);
+		z-index: 0;
+	}
 		.center {
 		max-width: 1440px;
 	}
 }
 
 
-.contact_c__left, .contact_c__right {
+.contact_c__layer {
+	& > * {
+		position: relative;	
+		z-index: 2;
+	}
+}
+
+.contact_c__left {
 	flex: 0 1 40%;
+}
+.contact_c__right {
+	flex: 0 1 30%;
 }
 .contact_c__form {
 	.text-field {

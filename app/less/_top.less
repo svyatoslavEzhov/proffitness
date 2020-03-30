@@ -118,7 +118,7 @@
 
 .top__simulator-card{
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 25px 0;
@@ -127,12 +127,22 @@
   box-shadow: 2px 5px 28px -17px rgba(0,0,0,0.35);
   flex: 0 1 293px;
   margin: 0 25px;
+  padding-bottom:  0;
   margin-bottom: 60px;
+  flex-direction: column;
 
   &:hover {
     &:before, &:after {
      width: 100%;
      height: 100%;
+    }
+  }
+
+  &:hover {
+    .catalog__more-btn {
+      background: radial-gradient(circle,#ff7628,#ff7223,#ff6d1e,#ff6817,#ff6311);
+
+    box-shadow: 0 0 15px #fc5402;
     }
   }
   &:before {
@@ -170,12 +180,22 @@
     margin-top: auto;
     width:  100%;
     max-width: 293px;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    // text-overflow: ellipsis;
+    // overflow: hidden;
 }
 
 .top__simulator-card-price {
   color: @main-color;
+  padding-bottom:  25px;
+  margin-top:   auto;
+}
+
+
+.top__simulator-card-price-old {
+  color: @font-color;
+  text-decoration: line-through;
+  // margin-right: 10px;
+
 }
 
 .hidden-card {
@@ -208,7 +228,8 @@
 
 
 .top__simulator-card-img {
-  margin: auto;
+  // margin: auto;
+  height: 293px;
 }
 
 .top__filter-icon {

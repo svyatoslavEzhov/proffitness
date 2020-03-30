@@ -14,9 +14,9 @@
 }
 
 .filter_ca__simulator-card {
-    &:not(:nth-last-child(-n+3)) {
-        margin-bottom: 44px;
-      }
+    // &:not(:nth-last-child(-n+3)) {
+    //     // margin-bottom: 44px;
+    //   }
 }
 
 .filter_ca__form {
@@ -295,4 +295,17 @@ select {
         height: 1px;
         background: #eee;
     }
+}
+
+
+.catalog__more-btn {
+    width: 100%;
+    max-width: 100%;
+    &:hover {
+        box-shadow: unset;
+        background: radial-gradient(circle,#fc6719,#fc6314,#fc5e0f,#fc5908,#fc5402)
+    }
+    position: relative; 
+    z-index: 2;
+    // margin-top:     auto;
 }
