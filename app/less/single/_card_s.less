@@ -429,8 +429,8 @@
         justify-content: space-between;
         min-width: 225px;
         &:nth-child(odd) {
-            background: @main-color;
-            color: @white;
+            background: #eee;
+            color: @main-color;
         }
     }
 }
@@ -442,5 +442,9 @@
 .card_s__image-slider {
     .slick-dots li button:before {
         font-size: 34px;
+    }
+
+    .slick-dots  li.slick-active button:before {
+        color: @main-color;
     }
 }
