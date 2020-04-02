@@ -14,6 +14,7 @@ import magnificPopup from 'magnific-popup';
 import noUiSlider from "noUiSlider";
 import wNumb from "wNumb";
 import Drift from 'drift-zoom';
+// import Packery from 'packery'
 // import event from './Event.js';
 // import magnifier from './Magnifier.js';
 // import Axios from 'axios';
@@ -25,6 +26,7 @@ window.jQuery = $;
 window.noUiSlider = noUiSlider;
 window.wNumb = wNumb;
 window.Drift = Drift;
+// window.Packery = Packery;
 
 // window.Eve = event;
 // window.Magnifier = magnifier;

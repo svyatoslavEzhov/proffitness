@@ -1,4 +1,10 @@
 
+@media screen and (min-width: 768px) {
+    .header__menu.visible {
+        display: flex !important;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .top__filter-wrap-list-item:not(:last-child) .top__filter-wrap-list{
         flex-wrap: wrap;
@@ -13,13 +19,13 @@
         margin: 0;
     }
 
-    .breadcrumbs span {
-        display: none;
-    }
+    // .breadcrumbs span {
+    //     display: none;
+    // }
 
-    .breadcrumb__item:not(:first-child) {
-        margin-left: 0;
-    }
+    // .breadcrumb__item:not(:first-child) {
+    //     margin-left: 0;
+    // }
 }
 
 @media screen and (max-width: 998px) {
@@ -29,6 +35,10 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+    }
+
+    .preview__layer-- {
+        margin-top: 235px;
     }
 
     .preview {
@@ -185,7 +195,62 @@
 
 @media screen and (max-width: 767px) {
     .header__menu.visible {
-        display: none !important;
+        display: none;
+    }
+
+    .header.fixed {
+        .header__menu {
+               top: 67px;
+        }
+    }
+
+    .header__menu {
+    // transition: all 0.2s linear;
+    position: fixed;
+    // transform: scaleY(0);
+    // animation: slide 0.2s linear forwards;
+    transform-origin: top;
+    top: 73px;
+    left: 0px;
+    background: @main-color;
+    width: 100vw;
+    display: block;
+    &.visible {
+          // transition: all 0.2s linear;
+          //   transform: scaleY(0);
+    }
+
+        .header__menu-list {
+            flex-wrap: wrap;
+        }
+
+        .header__menu-item {
+            flex-basis: 100%;
+            svg {
+                fill: @white;
+            }
+        }
+
+        .header__menu-link {
+            color: @white;
+
+        }
+    }
+
+// @keyframes slide {
+//     from {
+//         transform: scaleY(0);
+//         } to {
+//         transform: scaleY(1);        
+//         }
+// }
+
+    .header__menu-list-inner, .header__menu-list-inner-2 {
+        background: @font-color;
+    }
+
+    .header__menu-list-inner-2:before, .header__menu-list-inner:before {
+        border-bottom: 10px solid @font-color;
     }
 
     .top__layer .f-container {
@@ -417,6 +482,34 @@
         flex-wrap: wrap;
     }
 
+    .h2-title_m {
+        text-align: center;
+        width: 100%;
+    }
+
+    .header__menu {
+        top: 81px;
+    }
+
+    .preview__layer-- {
+        & > * {
+            position: relative;
+            z-index: 2;
+        }
+        background-position: left;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(@white, 0.45);
+            z-index: 1;
+        }
+    }
+
     .header__phone-item {
         flex-basis: 100%;
         margin-right: 0;
@@ -610,11 +703,13 @@
    
 
     .card_s__top {
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
 
     .mobile-ul {
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
+        align-items: flex-end;
+        flex-direction: column;
         .header__menu-item {
             justify-content: flex-end;
             flex-basis: 100%;
@@ -688,7 +783,7 @@
     // }
 
     .offer__btn {
-        max-width: 217px;
+        max-width: 275px;
     }
 
     .service__card {
@@ -720,6 +815,73 @@
         min-height: 620px;
     }
 
+
+    .grid-item {
+        flex-basis: 50%;
+    }
    
+   .grid-item--width2 {
+    flex-basis: 100%;
+   }
+
+   .card_s__name, .card_s__info {
+    margin-bottom: 15px;
+   }
+
+   .card_s__text {
+    line-height: 1.75;
+   }
+
+   .card_s__btn {
+    margin-bottom: 20px;
+   }
+
+   .buy__cards {
+    margin-bottom: 0;
+   }
+
+   .buy__card {
+    &:last-child {
+        margin-bottom: 0;
+    }
+   }
+
+   .restoration__cards, .rectoration__text {
+    margin-bottom: 0;
+   }
+
+   .buy_ca__paragraph {
+    margin-bottom: 25px;
+    line-height: 1.75;
+   }
+
+
+   .blog__tale-item {
+    flex-basis: 100%;
+   }
     
+
+    .blog__tale-preview {
+     font-size: 15px;
+    }
+
+
+    .preview__slide-title {
+        justify-content: center;
+    }
+
+.preview__slide-list li {
+    display: inline-block;
+    text-align: center;
+}
+
+.preview__slide-title span:before{
+    margin: 0 15px;
+    height: 35px;
+}
+
+.preview__slide-text {
+    margin-bottom: 10px;
+}
+
 }

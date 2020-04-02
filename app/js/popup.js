@@ -1,6 +1,7 @@
 import { log } from "./main"
 
 export default function() {
+    
     $('.popup-with-zoom-anim').magnificPopup({
         type: 'inline',
 

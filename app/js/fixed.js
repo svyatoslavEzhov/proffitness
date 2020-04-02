@@ -28,17 +28,19 @@ export default function(flag) {
 
     $('.hamRotate.ham1').on('click', function() {
         // $(this).toggleClass('active');
-        $('.header__menu').fadeIn(400).addClass('flex fixed')
-        $('body, html').addClass('noScroll');
-        $('.close-btn').addClass('visible').fadeIn();
+        // $('.header__menu').fadeIn(400).addClass('flex fixed')
+        $('.header__menu').slideToggle();
+        // $('.header__menu');
+        $('body, html').toggleClass('noScroll');
+        // $('.close-btn').addClass('visible').fadeIn();
     })
 
 
-    $('.close-btn').on('click', function() {
-        $('body, html').removeClass('noScroll');
-        $(this).removeClass('visible');
-        $('.header__menu').fadeOut(400, function() {
-            $(this).removeClass('flex fixed');
-        })
-    })
+    // $('.close-btn').on('click', function() {
+    //     $('body, html').removeClass('noScroll');
+    //     $(this).removeClass('visible');
+    //     $('.header__menu').fadeOut(400, function() {
+    //         $(this).removeClass('flex fixed');
+    //     })
+    // })
 }

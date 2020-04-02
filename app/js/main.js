@@ -20,6 +20,9 @@ import test from './test'
 import singlesliders from './single-page-sliders'
 import brandslider from './brands.slider'
 import sorting from './sotring'
+import popupGallery from './popup-gallery'
+import masonry from './masonry'
+
 
 
 
@@ -52,6 +55,8 @@ let main = {
         singlesliders();
         brandslider();
         sorting();
+        popupGallery();
+        masonry();
 
     },
 

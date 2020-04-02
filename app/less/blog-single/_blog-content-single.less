@@ -1,0 +1,102 @@
+.blog-single__layer {
+			.fPa(74%, 70%, 74px, 70px, 980px, 1920px);
+}
+
+
+.blog-single__article {
+	div {
+		&:first-of-type {
+			position: relative;
+			margin-bottom: 30px;
+			&:before {
+				content: '';
+				padding-top: 56%;
+				display: block;
+			}
+		}
+	}
+	img {
+	
+
+		width: 100%;
+		max-width: 560px;
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 20px;
+
+			&:first-of-type {
+			width: 100%;
+		
+			max-width: unset;
+			position: absolute;
+			width: 100%;
+			top: 0;
+			left: 0;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+
+		}
+	}
+
+	p {
+		margin-bottom: 20px;
+	}
+
+
+	iframe {
+		width: 100%;
+		max-width: 560px;
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	a {
+		color: @main-color;
+	}
+
+	ul, ol {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+	}
+
+	ul {
+			li {
+	    display: flex;
+	    align-items: center;
+	    position: relative;
+	    margin-bottom: 10px;
+	    padding-inline-start: 20px;
+
+	    &:before {
+	    content: '';
+	    display: block;
+	    width: 4px;
+	    height: 4px;
+	    transform: rotate(45deg);
+	    margin-right: 6px;
+	    background-color: #fc5402;
+	    flex-shrink: 0;
+	    }
+		}
+	}
+
+	ol {
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset: num; /* Задаём имя счетчика */
+    padding-inline-start: 20px;
+   	li::before {
+    content: counter(num) '. '; /* Выводим число */
+    counter-increment: num; /* Увеличиваем значение счётчика */
+    color: @main-color;
+    font-style: italic;
+   }
+	}
+
+	
+}

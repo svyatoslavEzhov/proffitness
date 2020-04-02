@@ -1,0 +1,70 @@
+.blog__layer {
+	.fPa(74%, 70%, 74px, 70px, 980px, 1920px);
+	.f-container {
+		margin: 0 -15px;
+	}
+}
+
+
+.blog__tale {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+.blog__tale-item {
+	flex-basis: 50%;
+	padding: 0 15px;
+	margin-bottom: 30px;
+
+
+	&:hover {
+		.blog__tale-img {
+			transform: scale(1.08);
+		}
+	}
+
+
+}
+
+.blog__tale-img-wrap {
+	position: relative;
+	margin-bottom: 20px;
+		overflow: hidden;
+	&:before {
+		content: '';
+		display: block;
+		padding-top: 56%;
+	}
+}
+
+.blog__tale-title {
+	text-align: center
+}
+
+.blog__tale-btn {
+	margin: 0 auto;
+}
+
+
+.blog__tale-img {
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	object-position: center;
+	transition: transform 0.1s linear;
+}
+
+.blog__tale-title {
+	margin-bottom: 10px;
+}
+
+.blog__tale-content {
+	margin-bottom: 20px;
+}

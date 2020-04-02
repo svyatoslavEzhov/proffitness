@@ -8,10 +8,10 @@ export default function() {
 let thumbs= document.querySelectorAll('.zoom');
 
 $(window).on('load', function(){
-	if($(this).width() > 576) {
+	if($(this).width() > 576 && thumbs) {
 
-
-thumbs.forEach((el, i)=>{
+		// console.log('fdfd');
+		thumbs.forEach((el, i)=>{
 		let thumb = el;
 
 	let drift = new Drift(thumb, {
