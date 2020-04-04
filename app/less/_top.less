@@ -66,7 +66,7 @@
 }
 
 
-.top__filters-list-item {
+.top__filters-list-item, .top__filters-list-item2 {
     text-transform: uppercase;
     letter-spacing: -0.1px;
     cursor: pointer;
@@ -106,6 +106,15 @@
   }
 }
 
+
+.top__filters-list-item2.current-menu-item {
+  a {
+   color: @main-color;
+  }
+  &:before {
+    width: 32px;
+  }
+}
 .top__simulators {
   display: flex;
   flex-wrap: wrap;

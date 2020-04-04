@@ -18,4 +18,7 @@ export default function(){
     }
   ]
  })
+// console.log(mask());
+
+ $('.phone-mask').mask('+38 (999) 999-9999');
 }

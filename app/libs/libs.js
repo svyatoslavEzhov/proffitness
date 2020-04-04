@@ -8,12 +8,13 @@ import magnificPopup from 'magnific-popup';
 // import LazyLoad from "vanilla-lazyload";
 // import preloader from './preloader';
 // import './masonry.pkgd';
-// import "./maskinput";
+import "./maskinput";
 // import "./jquery.parallax-scroll";
 // import 'core-js/features/promise';
 import noUiSlider from "noUiSlider";
 import wNumb from "wNumb";
 import Drift from 'drift-zoom';
+// import Mask from './maskinput';
 // import Packery from 'packery'
 // import event from './Event.js';
 // import magnifier from './Magnifier.js';

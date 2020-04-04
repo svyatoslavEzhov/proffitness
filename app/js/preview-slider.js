@@ -9,7 +9,10 @@ export default function() {
         adaptiveHeight: true,
         slidesToScroll: 1,
         arrows: false,
-        speed: 450
+        speed: 450,
+        autoplay: true,
+        autoplaySpeed: 4000
+
     }).on('afterChange', function(event, slick, currentSlide, nextSlide) {
 
         $(slick.$slides).find('.preview__slide-img_right, .preview__slide-img_left').removeClass('animated');

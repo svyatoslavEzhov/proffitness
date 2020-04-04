@@ -54,7 +54,7 @@
 }
 
 
-#callback-popup .popup-description {
+.popup-window .popup-description {
 	text-align: center;
 	margin-bottom: 25px;
 }
@@ -468,7 +468,7 @@ uncomment this part if you haven't added this code anywhere else
 	padding: 10px;
 }
 
-#thanks-popup {
+.popup-window{
 	&:before{
 		content: none;
 	}
@@ -482,7 +482,7 @@ uncomment this part if you haven't added this code anywhere else
 	}
 }
 
-#callback-popup {
+.popup-window {
 	padding-top: 40px;
 	&:before {
 		content: none;
@@ -505,6 +505,11 @@ uncomment this part if you haven't added this code anywhere else
 		margin-right: auto;
 		display: block;
 	}
+}
+
+
+.restoration-popup.popup-window, .warranty-popup.popup-window {
+	max-width: 980px;
 }
 // POPUP
 
@@ -701,16 +706,16 @@ div.wpcf7-mail-sent-ok {
 	display: none !important;
 }
 
-#callback-popup .wpcf7 {
+.popup-window .wpcf7 {
 	width: 100%;
 }
 
-#callback-popup .text-field {
+.popup-window .text-field {
 	margin: 0 auto;
   display: block;
 }
 
-#callback-popup .wpcf7-form-control-wrap, .contact_c__form .wpcf7-form-control-wrap {
+.popup-window .wpcf7-form-control-wrap, .contact_c__form .wpcf7-form-control-wrap {
 	width: 100%;
 }
 

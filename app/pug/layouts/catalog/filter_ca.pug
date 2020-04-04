@@ -18,22 +18,27 @@
                                     |По возрастанию цены
                                 option(value="DESC")
                                     |По уменьшению цены
-                        //- .form-group
-                        //-     input(type='checkbox' value='Lifefitness' id="filter_ca__radio1")
-                        //-     label.filter_ca__lable(for='filter_ca__radio1')
-                        //-         span
-                        //-             span
-                        //-         |Lifefitness
-                        //-     input(type='checkbox' value='Precor' id="filter_ca__radio2")
-                        //-     label.filter_ca__lable(for='filter_ca__radio2')
-                        //-         span
-                        //-             span
-                        //-         |Precor
-                        //-     input(type='checkbox' value='Technogym' id="filter_ca__radio3")
-                        //-     label.filter_ca__lable(for='filter_ca__radio3')
-                        //-         span
-                        //-             span
-                        //-         |Technogym
+                        .form-group
+                            input.filter_ca__checkbox(type='radio' value='Lifefitness' id="filter_ca__radio1" name="Manufacturer")
+                            label.filter_ca__lable(for='filter_ca__radio1')
+                                span
+                                    span
+                                |Lifefitness
+                            input.filter_ca__checkbox(type='radio' value='Precor' id="filter_ca__radio2" name="Manufacturer")
+                            label.filter_ca__lable(for='filter_ca__radio2')
+                                span
+                                    span
+                                |Precor
+                            input.filter_ca__checkbox(type='radio' value='Technogym' id="filter_ca__radio3" name="Manufacturer")
+                            label.filter_ca__lable(for='filter_ca__radio3')
+                                span
+                                    span
+                                |Technogym
+                            input.filter_ca__checkbox(type='radio' value='All' id="filter_ca__radio4" name="Manufacturer" checked="checked")
+                            label.filter_ca__lable(for='filter_ca__radio4')
+                                span
+                                    span
+                                |Все
                         #filter_ca__slider
                         input.price-sort(type="hidden" name="PriceSorting" value="")
                         input.price-min(type="hidden" name="PriceMin" value="")

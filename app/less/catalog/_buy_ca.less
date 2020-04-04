@@ -10,14 +10,15 @@
 
 
 .buy_ca__text {
-    &:nth-child(odd) {
-        .buy_ca__paragraph {
+    width: 100%;
+    &:nth-of-type(odd) {
+        .buy_ca__paragraph, .buy_ca__list {
             margin-right: auto;
         }
        
     }
-    &:nth-child(even) {
-        .buy_ca__paragraph {
+    &:nth-of-type(even) {
+        .buy_ca__paragraph, .buy_ca__list {
             margin-left: auto;
         }
         
@@ -41,6 +42,8 @@
 
 .buy_ca__image {
     margin-bottom: 40px;
+    margin-left:    auto;
+    margin-right:   auto;
 }
 
 .buy_ca__list {
