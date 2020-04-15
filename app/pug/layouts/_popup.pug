@@ -123,3 +123,173 @@
 			h2 Спасибо, Ваша заявка успешно отправлена!
 		#error-dialog.zoom-anim-dialog.mfp-hide.small-dialog
 			h2 При отправке возникла ошибка, поробуйте, пожалуйста, еще раз!
+		#restoration-process.zoom-anim-dialog.mfp-with-anim.mfp-hide.info-popup.restoration.center
+			.info-popup-header
+				h2.info-popup-header__title РЕСТАВРАЦИЯ
+				.info-popup-header__post-title Наш 7-этапный процесс
+				
+			.info-popup__inner
+				.restoration__step
+					+popup-title('Этап 1: начальная проверка', 'Каждый тренажер тщательно проверяется, тестируется и диагностируется нашей талантливой командой техников')
+					ul.restoration__features
+						-
+							var featuresItems = [
+								{icon: 'clock', title: 'Пульсометр', descriptions: ['Cоединение', 'Точность', 'Дисплей']},
+								{icon: 'gamebox', title: 'Консоль дисплея', descriptions: ['Программы', 'Кнопки', 'Светодиоды']},
+								{icon: 'runing-man', title: 'Особые возможности', descriptions: ['Сопротивление', 'Скорость', 'Угол наклона']},
+							];
+						each feature in featuresItems
+							- var {icon, title, descriptions} = feature;
+							li.restoration__features-item.feature-item
+								.feature-item__icon.feature-icon(class=`feature-icon_${icon}`)
+									+svg2(icon)
+								.feature-item__title= title
+								each text in descriptions
+									.feature-item__description= text
+
+				.restoration__step
+					+popup-title('Этап 2: проверка шума', 'Наши специалисты проверяют тренажер в движении на наличие необычных шумов. Любые обнаруженные недостатки ремонтируются и/или заменяются новыми деталями')
+					.restoration__wrapper
+						.feature-icon.feature-icon_builder
+							+svg2('builder')
+						img(src="img/exercise-machine.png", alt="")
+
+				.restoration__step
+					+popup-title('Этап 3: Разборка', 'Каждый тренажер полностью разбирается, тщательно очищается и проверяется нашими специалистами')
+					- var icons = ['certificate','worker','things'];
+					.restoration__list
+						each icon in icons
+							.restoration__list-item
+								.feature-icon
+									+svg2(icon)
+
+				.restoration__step
+					+popup-title('Этап 4: замена деталей', 'Все оборудование, ремни, цепи, шкивы, тросы, подшипники проверяются и заменяются по мере необходимости')
+
+				.restoration__step
+					+popup-title('Этап 5: повторная сборка', 'Тренажер повторно собирается в соответствии с заводскими спецификациями и начинает восстанавливаться до «почти нового» косметического состояния')
+					- var icons = ['builder','tools','to-do-list'];
+					.restoration__list
+						each icon in icons
+							.restoration__list-item
+								.feature-icon
+									+svg2(icon)
+
+				.restoration__step
+					h3.info-popup__title Этап 6: внешняя реставрация
+					.restoration__external-restoration.external-restoration
+						-
+							var externalRestoration = [
+								{icon: 'grinding', text: 'Тренажеры подвергаются отшлифовке вручную до оригинальной стали для дальнейшей покраски'},
+								{icon: 'paint', text: 'Их перекрашивают с использованием новейших технологий, чтобы визуальное состояние было «как новый». Покупателю доступен выбор цвета'},
+								{icon: 'restoration', text: 'Все изношенные крышки реставрируются или заменяются'},
+								{icon: 'power-cord', text: 'Шнуры питания проверяются на износ и при необходимости заменяются'},
+								{icon: 'сbrushstrokes', text: 'Смазочные материалы и воски применяются для обеспечения оптимального функционирования и долговечности'},
+							];
+
+						each item in externalRestoration
+							- let {icon, text} = item
+							.external-restoration__item
+								.external-restoration__icon.feature-icon
+									+svg2(icon)
+								.external-restoration__text= text
+
+				.restoration__step
+					+popup-title('Этап 7: заключительная проверка', 'На последнем этапе процесса восстановления наши технические специалисты повторно проверяют каждый тренажер и повторно тестируют каждый элемент, чтобы гарантировать качество')
+
+					ul.restoration__features
+						-
+							var featuresItems = [
+								{icon: 'functionality', text: 'Функциональность'},
+								{icon: 'performance', text: 'Производительность'},
+								{icon: 'reliability', text: 'Надежность'},
+								{icon: 'pleasures', text: 'Удовольствия'},
+							];
+						each feature in featuresItems
+							- var {icon, text} = feature;
+							li.restoration__features-item.feature-item
+								.feature-item__icon.feature-icon(class=`feature-icon_${icon}`)
+									+svg2(icon)
+								.feature-item__title 100%
+								.feature-item__description= text
+
+				.restoration__wrapper
+					a.main-btn.restoration__btn(href="#") Заказать
+					a.on-top(href="#restoration-process")
+						+svg2('UpCircle')
+		#garranty-coverage.zoom-anim-dialog.mfp-with-anim.mfp-hide.info-popup.garranty-coverage.center
+			.info-popup-header
+				h2.info-popup-header__title
+					| Гарантийное покрытие
+				.info-popup-header__post-title 
+					| Все наши восстановленные тренажеры поставляются с #[strong БЕСПЛАТНОЙ] гарантией на 1 год, включая детали и работу. Никакой другой
+					| магазин фитнес-оборудования в стране не предлагает такого! Мы уверены в качестве продукта, который предлагаем
+
+			.info-popup__inner
+				.garranty-coverage__item
+					h3.info-popup__title Что мы покрываем:
+					ul.garranty-coverage__list
+						-
+							var garrantyList = [
+								'Устранение любых механических или электронных проблем, из-за которых тренажер не работает',
+								'100% трудозатрат, а также выезды техников для диагностики и ремонта',
+								'Замену деталей, включая движущиеся детали, такие как подшипники, шкивы, тросы, двигатели, аккумуляторы, деки, ремни и т.д. (Если тренажер не работает)',
+								'Устранение проблем с программным обеспечением, включая сообщения об ошибках на экране, сбои в работе программы и перезагрузку консоли'
+							]
+
+						each text, index in garrantyList
+							li.garranty-coverage__list-item
+								.feature-icon.garranty-coverage__list-icon
+									+svg2(`garranty-coverage-0-${index}`)
+								.garranty-coverage__list-text= text
+
+				.garranty-coverage__item
+					h3.info-popup__title В каких случаях покрываем:
+					ul.garranty-coverage__list
+						-
+							var garrantyList = [
+								'При использовании тренажёра дома покупателем и членами его семьи',
+								'При использовании тренажёра в коммерческой среде (тренажерный зал, гостиница, жилой комплекс, и т. д)'
+							]
+
+						each text, index in garrantyList
+							li.garranty-coverage__list-item
+								.feature-icon.garranty-coverage__list-icon
+									+svg2(`garranty-coverage-1-${index}`)
+								.garranty-coverage__list-text= text
+
+				.garranty-coverage__item
+					h3.info-popup__title Детали гарантии:
+					ul.garranty-coverage__list
+						-
+							var garrantyList = [
+								'Гарантийный срок начинается со дня доставки тренажера на дом/тренажерный зал',
+								'Гарантийное обслуживание на территории Украины  будет предоставлено нашими техниками по ремонту фитнес-оборудования или партнерами',
+								'Техник направляется на диагностику, в ближайшее свободное время, но не позже одной недели после запроса на обслуживание',
+								'Гарантия предоставляется непосредственно через Proffitness и не подлежит передаче',
+								'Если есть какие-либо дефекты по прибытии, пожалуйста, свяжитесь с нами в день доставки, чтобы мы могли решить эту проблему. Если мы не получим уведомление, оно не будет покрыто',
+							]
+
+						each text, index in garrantyList
+							li.garranty-coverage__list-item
+								.feature-icon.garranty-coverage__list-icon
+									+svg2(`garranty-coverage-2-${index}`)
+								.garranty-coverage__list-text= text
+
+				.garranty-coverage__item
+					h3.info-popup__title Что не включено:
+					ul.info-popup__list
+						-
+							var popupList = [
+								'Любые механические, программные и косметические проблемы, которые являются прямым результатом неправильного использования, физического повреждения или вызваны разборкой/сборкой тренажера пользователем/другими людьми(не нашими специалистами), а также если пользователь, делает то, что руководство по эксплуатации специально предупреждает не делать.',
+								'Косметические дефекты, включая, помимо прочего, царапины, сломанный пластик, отслаивающиеся наклейки / логотипы / накладки и т. д., за исключением дефектов по прибытии. Если косметические дефекты присутствуют, о них нужно сообщить в день доставки тренажера.',
+								'Ремонт тренажера не будет осуществляться, если Вы держите его на улице. (Попадание воды/молнии/огня и т.п.).',
+								'Если оговорены сроки прибытия специалистов для диагностики/ремонта оборудования, а вас нет дома/в зале, услуги по вызову мастера перекладываются на клиента.',
+							]
+						each text in popupList
+							li.info-popup__item= text
+					.info-popup__text По окончанию гарантии мы предоставляем постгарантийное обслуживание с минимальными затратами на запчасти и вызов специалистов
+				.restoration__wrapper
+					a.main-btn.restoration__btn(href="#") Заказать
+					a.on-top(href="#garranty-coverage")
+						+svg2('UpCircle')

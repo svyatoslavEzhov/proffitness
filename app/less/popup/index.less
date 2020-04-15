@@ -1,0 +1,357 @@
+.info-popup {
+	max-width       : 950px;
+	margin-top      : 110px;
+	margin-bottom   : 110px;
+	background-color: #fff;
+	padding-left    : 0;
+	padding-right   : 0;
+	letter-spacing  : 0;
+
+	&__inner {
+		padding-left  : 65px;
+		padding-right : 65px;
+		padding-top   : 50px;
+		padding-bottom: 50px;
+
+		@media screen and (max-width: 768px) {
+			padding-left  : 20px;
+			padding-right : 20px;
+			padding-top   : 25px;
+			padding-bottom: 25px;
+		}
+	}
+
+	& button.mfp-close {
+		top  : 20px;
+		right: 20px;
+	}
+
+	&__title {
+		font-weight  : 700;
+		color        : #313131;
+		font-size    : 24px;
+		text-align   : center;
+		margin-top   : 0;
+		margin-bottom: 20px;
+	}
+
+	&__list {
+		counter-reset: list;
+	}
+
+	&__item {
+		font-size      : 16px;
+		color          : #313131;
+		line-height    : 27px;
+		margin-bottom  : 70px;
+		padding-left   : 60px;
+		position       : relative;
+		list-style-type: none;
+
+		@media screen and (max-width: 576px) {
+			padding-left : 0;
+			margin-bottom: 20px;
+		}
+
+		&::before {
+			position         : absolute;
+			left             : 30px;
+			top              : 50%;
+			transform        : translate(-50%, -50%);
+			counter-increment: list;
+			content          : counter(list) ". ";
+			font-weight      : 700;
+			color            : #fc5402;
+			font-size        : 18px;
+
+			@media screen and (max-width: 576px) {
+				position: unset;
+			}
+		}
+	}
+
+	&__text {
+		font-size   : 16px;
+		color       : #313131;
+		line-height : 27px;
+		max-width   : 650px;
+		margin-left : auto;
+		margin-right: auto;
+		text-align  : center;
+	}
+}
+
+.info-popup-header {
+	padding-top     : 60px;
+	padding-bottom  : 60px;
+	padding-left    : 20px;
+	padding-right   : 20px;
+	background-image: url("../img/popup-header.jpg");
+	background-size : cover;
+
+	&__title {
+		font-size     : 34px;
+		padding-top   : 20px;
+		padding-bottom: 20px;
+		color         : #313131;
+		margin-top    : 0;
+		margin-bottom : 0;
+		max-width     : 600px;
+		margin-left   : auto;
+		margin-right  : auto;
+		position      : relative;
+		line-height   : 1.4;
+		text-align    : center;
+
+		@media screen and (max-width: 768px) {
+			font-size: 26px;
+		}
+
+		&::after {
+			position    : absolute;
+			right       : 0;
+			top         : 0;
+			content     : "";
+			width       : 50px;
+			height      : 50px;
+			border-top  : 2px solid #fc5402;
+			border-right: 2px solid #fc5402;
+		}
+	}
+
+	&__post-title {
+		font-size   : 16px;
+		color       : #313131;
+		text-align  : center;
+		max-width   : 549px;
+		margin-left : auto;
+		margin-right: auto;
+		line-height : 29px;
+
+		@media screen and (max-width: 576px) {
+			line-height: 20px;
+		}
+	}
+}
+
+.restoration {
+	&__step {
+		margin-bottom: 70px;
+	}
+
+	&__text {
+		font-size    : 16px;
+		margin-top   : 0;
+		margin-bottom: 35px;
+		text-align   : center;
+	}
+
+	&__wrapper {
+		display        : flex;
+		justify-content: center;
+		position       : relative;
+
+		@media screen and (max-width: 768px) {
+			.feature-icon_builder {
+				display: none;
+			}
+		}
+	}
+
+	&__list {
+		display        : flex;
+		justify-content: space-between;
+
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+
+		&-item {
+			width          : calc(100% / 3);
+			display        : flex;
+			justify-content: center;
+		}
+	}
+
+	&__features {
+		display        : flex;
+		justify-content: space-between;
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
+	}
+
+	&__features-item {
+		max-width: calc(100% / 3);
+		width    : 100%;
+
+		@media screen and (max-width: 768px) {
+			max-width    : 100%;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.feature-item {
+	display       : flex;
+	flex-direction: column;
+	align-items   : center;
+
+	&__icon {
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		font-size    : 16px;
+		font-weight  : 700;
+		color        : #313131;
+		margin-bottom: 15px;
+		text-align   : center;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__description {
+		font-size    : 16px;
+		color        : #313131;
+		margin-bottom: 10px;
+		text-align   : center;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.feature-icon {
+	width           : 76px;
+	height          : 76px;
+	background-color: #fc5402;
+	border-radius   : 50%;
+	display         : flex;
+	justify-content : center;
+	align-items     : center;
+
+	svg {
+		max-width : 60%;
+		max-height: 60%;
+		fill      : #fff;
+	}
+
+	&_clock svg {
+		width : 29px;
+		height: 42px;
+	}
+
+	&_gamebox svg {
+		width : 52px;
+		height: 36px;
+	}
+
+	&_runing-man svg {
+		width : 48px;
+		height: 48px;
+	}
+
+	&_builder svg {
+		width : 42px;
+		height: 45px;
+	}
+
+	&_builder {
+		margin-right: 100px;
+	}
+}
+
+.external-restoration {
+	&__item {
+		display      : flex;
+		align-items  : center;
+		margin-bottom: 30px;
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
+	}
+
+	&__icon {
+		margin-right: 30px;
+		flex-shrink : 0;
+
+		@media screen and (max-width: 768px) {
+			margin-right : 0;
+			margin-bottom: 5px;
+		}
+	}
+
+	&__text {
+		font-size: 16px;
+		color    : #313131;
+
+		@media screen and (max-width: 768px) {
+			text-align: center;
+		}
+	}
+}
+
+.on-top {
+	width    : 35px;
+	height   : 35px;
+	position : absolute;
+	top      : 50%;
+	transform: translateY(-50%);
+	right    : 0;
+
+	svg {
+		width : 100%;
+		height: 100%;
+		fill  : #fc5402;
+	}
+
+	@media screen and (max-width: 576px) {
+		display: none;
+	}
+}
+
+.garranty-coverage {
+	&__item {
+		margin-bottom: 45px;
+	}
+
+	&__list-item {
+		display         : flex;
+		align-items     : center;
+		background-color: #fbfbfb;
+		margin-bottom   : 10px;
+		padding-left    : 25px;
+		padding-right   : 25px;
+		padding-top     : 15px;
+		padding-bottom  : 15px;
+
+		@media screen and (max-width: 576px) {
+			flex-direction: column;
+		}
+	}
+
+	&__list-icon {
+		flex-shrink : 0;
+		margin-right: 35px;
+
+		@media screen and (max-width: 576px) {
+			margin-right : 0;
+			margin-bottom: 5px;
+		}
+	}
+
+	&__list-text {
+		color    : #313131;
+		font-size: 16px;
+
+		@media screen and (max-width: 576px) {
+			text-align: center;
+		}
+	}
+}
