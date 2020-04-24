@@ -89,6 +89,10 @@
 	background-image: url("../img/popup-header.jpg");
 	background-size : cover;
 
+	@media screen and (max-width: 576px) {
+		background-image: none;
+	}
+
 	&__title {
 		font-size     : 34px;
 		padding-top   : 20px;
@@ -312,7 +316,7 @@
 	}
 
 	@media screen and (max-width: 576px) {
-		display: none;
+		right: -25px;
 	}
 }
 
